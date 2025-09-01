@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+    background: #333;
+    /* Stile per l'effetto pixel art */
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    
+    /* Adatta il canvas alla finestra mantenendo le proporzioni */
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
